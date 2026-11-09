@@ -24,6 +24,11 @@ int main()
         cout << a[i] << endl;
     }
 
-
+    //数组名的用途
+    // 1. 获取数组的首地址
+    cout << "数组的首地址为：" << a << endl;
+    // 2. 获取数组的元素个数
+    cout << "数组的大小为：" << sizeof(a)<< endl;
+    cout << "数组的元素大小为：" << sizeof(a[0])<< endl;
 }
  
