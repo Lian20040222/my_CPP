@@ -1,0 +1,14 @@
+{
+    "python.analysis.extraPaths": [
+        "C:\\Users\\33024\\.kendryte\\k230_canmv_stubs\\f6ca68a0ed02f8d29d27bcf9681581e9f71209bb"
+    ],
+    "python.analysis.stubPath": "C:\\Users\\33024\\.kendryte\\k230_canmv_pylance\\6ee845ceeda20509\\typings",
+    "files.encoding": "utf8",
+    "C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.executorMap": {
+        "cpp": "chcp 65001 > $null; [Console]::InputEncoding = [System.Text.UTF8Encoding]::new(); [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new(); Set-Location -LiteralPath $dir; & 'C:\\msys64\\ucrt64\\bin\\g++.exe' -std=c++17 -Wall -Wextra -finput-charset=UTF-8 -fexec-charset=UTF-8 $fullFileName -o '$fileNameWithoutExt.exe'; if ($LASTEXITCODE -eq 0) { & '.\\$fileNameWithoutExt.exe' }"
+    }
+}
