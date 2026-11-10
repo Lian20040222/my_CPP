@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 // 结构体
 struct student
 {
@@ -8,6 +7,17 @@ struct student
     int age;
     int score;
 }stu3;
+
+struct teacher
+{
+    string name;
+    int age;
+    string subject;
+    int salary;
+    struct student stu;
+};
+
+
 
 
 
@@ -60,5 +70,15 @@ int main()
     cout << p->name << endl;
     cout << p->age << endl;
     cout << p->score << endl;
+
+    //结构体嵌套结构体
+    teacher t1 = {"王Laoshi", 30, "数学", 5000, stu3};
+    cout << t1.name << endl;
+    cout << t1.age << endl;
+    cout << t1.subject << endl;
+    cout << t1.salary << endl;
+    cout << t1.stu.name << endl;
+    cout << t1.stu.age << endl;
+    cout << t1.stu.score << endl;
 }
 
