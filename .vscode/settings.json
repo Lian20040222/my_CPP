@@ -9,6 +9,10 @@
     "code-runner.saveFileBeforeRun": true,
     "code-runner.fileDirectoryAsCwd": true,
     "code-runner.executorMap": {
-        "cpp": "chcp 65001 > $null; [Console]::InputEncoding = [System.Text.UTF8Encoding]::new(); [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new(); Set-Location -LiteralPath $dir; & 'C:\\msys64\\ucrt64\\bin\\g++.exe' -std=c++17 -Wall -Wextra -finput-charset=UTF-8 -fexec-charset=UTF-8 $fullFileName -o '$fileNameWithoutExt.exe'; if ($LASTEXITCODE -eq 0) { & '.\\$fileNameWithoutExt.exe' }"
-    }
+        "cpp": "chcp 65001 > $null; [Console]::InputEncoding = [System.Text.UTF8Encoding]::new(); [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new(); Set-Location -LiteralPath $dir; $src = @(Get-ChildItem -Filter '*.cpp' | ForEach-Object { $_.Name }); & 'C:\\msys64\\ucrt64\\bin\\g++.exe' -std=c++17 -Wall -Wextra -finput-charset=UTF-8 -fexec-charset=UTF-8 @src -o \"$fileNameWithoutExt.exe\"; if ($LASTEXITCODE -eq 0) { & \".\\$fileNameWithoutExt.exe\" }"
+    },
+    "trae.tab.enableRename": false,
+    "trae.tab.enableAutoImport": false
+
+    
 }
