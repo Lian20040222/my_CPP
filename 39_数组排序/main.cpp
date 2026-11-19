@@ -37,4 +37,3 @@ int main()
         cout << Human[i].name << " " << Human[i].age << " " << Human[i].sex << endl;
     }
 }
-
